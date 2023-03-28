@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegraph Clone</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main">
+
+            <div class="lables"></div>
+
+            <div class="form">
+
+                <form action="/create_post/" method="post">
+                    <div class="inputs">
+                        <input type="text" name="title" placeholder="Title" id="title"/><br>
+                        <input type="text" name="author" placeholder="Your Name" id="author"/><br>
+                        <textarea type="text" name="content" placeholder="Your story ..." id="content"></textarea><br>
+                    </div>
+                    <div class="buttons">
+                        <input type="password" name="password" placeholder="Password" id="password"></input><br>
+                        <button type="submit">Publish</button>
+                    </div>
+                </form>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        textarea = document.getElementsByTagName("textarea")[0];
+        textarea.addEventListener('input', autoResize, false);
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+    </script>
+    
+</body>
+</html>
