@@ -1,0 +1,25 @@
+.main{
+    .labels{
+        width: 27%;
+    }
+    .inputs{
+        width: 46%;
+        input, textarea{
+            padding: 10px;
+            border: none;
+            outline:none;
+            resize: none;
+            line-height: 25px;
+            ::placeholder{
+                font-weight: 400;
+            }
+        }
+        #title-input{
+            font-size: 32px;
+        }
+    }
+    .buttons{
+        padding: 12px;
+        width: 27%;
+    }
+}

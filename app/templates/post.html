@@ -8,10 +8,39 @@
 </head>
 <body>
 
-    Title : {{ data.title }}
-    Author : {{ data.author }}
-    <br>
-    {{data.content}}
+    <div class="container">
+
+        <div class="nav">
+            <i class="bi bi-brightness-high"></i>
+        </div>
+
+        <div class="main flex-row">
+            
+            <div class="labels"></div>
+
+            <div class="inputs flex-col">
+                <input type="text" name="title" id="title-input" placeholder="Title">
+                <input type="text" name="author" id="author-input" placeholder="Your Name">
+                <textarea name="story" id="story-input" placeholder="Your story ..."></textarea>
+            </div>
+
+            <div class="buttons flex-col">
+                <button id="publish" onclick="publish()">PUBLISH</button>
+                <button id="LOCK">LOCK</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        textarea = document.getElementsByTagName("textarea")[0];
+        textarea.addEventListener('input', autoResize, false);
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+    </script>
     
 </body>
 </html>

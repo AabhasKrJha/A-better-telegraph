@@ -1,0 +1,21 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 15px;
+  margin-top: 10px;
+}/*# sourceMappingURL=utilities.css.map */

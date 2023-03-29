@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegraph Clone</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </head>
 <body>
 
     <div class="container">
 
-        <div class="main">
+        <div class="nav">
+            <i class="bi bi-brightness-high"></i>
+        </div>
 
-            <div class="lables"></div>
+        <div class="main flex-row">
+            
+            <div class="labels"></div>
 
-            <div class="form">
+            <div class="inputs flex-col">
+                <input type="text" name="title" id="title-input" placeholder="Title">
+                <input type="text" name="author" id="author-input" placeholder="Your Name">
+                <textarea name="story" id="story-input" placeholder="Your story ..."></textarea>
+            </div>
 
-                <form action="/create_post/" method="post">
-                    <div class="inputs">
-                        <input type="text" name="title" placeholder="Title" id="title"/><br>
-                        <input type="text" name="author" placeholder="Your Name" id="author"/><br>
-                        <textarea type="text" name="content" placeholder="Your story ..." id="content"></textarea><br>
-                    </div>
-                    <div class="buttons">
-                        <input type="password" name="password" placeholder="Password" id="password"></input><br>
-                        <button type="submit">Publish</button>
-                    </div>
-                </form>
-                
+            <div class="buttons flex-col">
+                <button id="publish" onclick="publish()">PUBLISH</button>
+                <button id="LOCK">LOCK</button>
             </div>
 
         </div>
+
     </div>
 
     <script type="text/javascript">

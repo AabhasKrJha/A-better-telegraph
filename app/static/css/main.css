@@ -1,0 +1,26 @@
+.main .labels {
+  width: 27%;
+}
+.main .inputs {
+  width: 46%;
+}
+.main .inputs input, .main .inputs textarea {
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  line-height: 25px;
+}
+.main .inputs input ::-moz-placeholder, .main .inputs textarea ::-moz-placeholder {
+  font-weight: 400;
+}
+.main .inputs input ::placeholder, .main .inputs textarea ::placeholder {
+  font-weight: 400;
+}
+.main .inputs #title-input {
+  font-size: 32px;
+}
+.main .buttons {
+  padding: 12px;
+  width: 27%;
+}/*# sourceMappingURL=main.css.map */
